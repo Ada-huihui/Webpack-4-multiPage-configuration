@@ -1,0 +1,49 @@
+{
+  "name": "official-website",
+  "version": "1.0.0",
+  "description": "考虑到兼容性，用webpack配置多页面应用，预期效果：1.能压缩js,小图片base64 2.支持css预处理 3.支持babel ，兼容低浏览器 4.支持postcss给css3添加浏览器前缀",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.js --process --color",
+    "dev": " cross-env NODE_ENV=development webpack-dev-server --config build/webpack.dev.js --process --color",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@itgit.comen.com:huangchunfei/official-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "autoprefixer": "^9.8.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.2",
+    "css-loader": "^3.6.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "glob": "^7.1.6",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "html-withimg-loader": "^0.1.16",
+    "less": "^3.11.3",
+    "less-loader": "^6.1.1",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-notifier": "^7.0.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "portfinder": "^1.0.26",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^1.2.1",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {}
+}
